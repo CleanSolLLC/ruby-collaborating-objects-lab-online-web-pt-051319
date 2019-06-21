@@ -31,7 +31,7 @@ class Artist
         artist_name.name == name ? name : name = Artist.new(name)
 
       end
-      #name
+      name
     end
 
     def print_songs
