@@ -2,27 +2,18 @@ require 'pry'
 
 class MP3Importer
 
-    def initialize(filename)
-        binding.pry
+  attr_accessor :path
 
-    end
-
-
-    def files
-
-    end
-
-
-    def import
-
-
-    end
-
-
+  def initialize(path)
+    @path = path
   end
 
+  def files
+    Dir.entries(path).select{|filenames| filenames.end_with?('.mp3')}
+  end
 
-
-
+  def import
+    files.each { |file| Song.new_by_filename(file)}
+  end
 
 end
