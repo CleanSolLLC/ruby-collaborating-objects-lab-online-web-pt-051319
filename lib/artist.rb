@@ -35,7 +35,7 @@ class Artist
     end
 
     def self.find_by_name
-      self.all.collect do |artist_name| artist_name.name == name}
+      self.all.collect {|artist_name| artist_name.name == name}
     end
 
     def print_songs
