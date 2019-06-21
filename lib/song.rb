@@ -12,7 +12,6 @@ class Song
       artist = files.split("-")[0].strip
       name = files.split("-")[1].strip
       song = self.new(name)
-      binding.pry
       song.artist_name = artist
       song
     end
@@ -20,6 +19,7 @@ class Song
     def artist_name=(name)
     artist = Artist.find_or_create_by_name(name)
     artist.add_song(self)
+    binding.pry
     end
 
   end
