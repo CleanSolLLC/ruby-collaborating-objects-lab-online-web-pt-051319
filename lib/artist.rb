@@ -4,7 +4,7 @@ class Artist
 
   attr_accessor :name, :songs
 
-  @@all = []
+    @@all = []
 
     def initialize(name)
         @name = name
@@ -19,11 +19,12 @@ class Artist
 
     def save
       @@all << self
+      binding.pry
     end
 
-    #def self.all
-    #  @@all
-    #end
+    def self.all
+      @@all
+    end
 
     def self.find_or_create_by_name(name)
       @name = name
