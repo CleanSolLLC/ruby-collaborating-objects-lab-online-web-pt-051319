@@ -12,8 +12,8 @@ class Song
       artist = files.split("-")[0].strip
       name = files.split("-")[1].strip
       song = self.new(name)
-      song
       song.artist_name = artist
+      song
     end
 
     def artist_name=(name)
