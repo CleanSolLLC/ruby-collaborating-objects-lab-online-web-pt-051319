@@ -13,7 +13,7 @@ class Artist
 
 
     def add_song(song)
-      @songs << song
+      self.songs << song
     end
 
 
@@ -27,7 +27,6 @@ class Artist
 
     def self.find_or_create_by_name(name)
       self.create_by_name(name) || self.find_by_name(name)
-      binding.pry
     end
 
     def self.create_by_name(name)
