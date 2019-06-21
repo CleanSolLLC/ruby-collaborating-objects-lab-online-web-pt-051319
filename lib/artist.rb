@@ -31,7 +31,6 @@ class Artist
       @@all.collect do |artist_name|
         artist_name.name == name ? name : name = Artist.new(name)
       end
-      name
     end
 
     def print_songs
