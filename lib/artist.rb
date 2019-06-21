@@ -13,6 +13,7 @@ class Artist
 
 
     def add_song(song)
+      binding.pry
       @songs << song
       #song.artist = self
     end
