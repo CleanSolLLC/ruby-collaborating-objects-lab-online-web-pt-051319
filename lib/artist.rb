@@ -31,6 +31,7 @@ class Artist
 
     def self.create_by_name(name)
       artist = self.new(name)
+      binding.pry
       artist.save
     end
 
