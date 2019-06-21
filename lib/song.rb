@@ -12,6 +12,7 @@ class Song
       artist = files.split("-")[0].strip
       name = files.split("-")[1].strip
       song = self.new(files)
+      binding.pry
       song.artist_name = artist
       song
     end
