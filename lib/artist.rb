@@ -30,6 +30,7 @@ class Artist
       @name = name
       @@all.collect do |artist_name|
         artist_name.name == name ? name : name = Artist.new(name)
+        name
       end
     end
 
