@@ -34,7 +34,7 @@ class Artist
       artist.save
     end
 
-    def self.find_by_name
+    def self.find_by_name(name)
       self.all.collect {|artist_name| artist_name.name == name}
     end
 
