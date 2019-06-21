@@ -27,12 +27,12 @@ class Artist
 
     def self.find_or_create_by_name(name)
       self.create_by_name(name) || self.find_by_name(name)
+      binding.pry
     end
 
     def self.create_by_name(name)
       artist = self.new(name)
       artist.save
-      binding.pry
     end
 
     def self.find_by_name(name)
