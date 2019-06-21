@@ -2,27 +2,14 @@ require 'pry'
 
 class MP3Importer
 
-    def initialize(filename)
-        binding.pry
+  attr_accessor :path
 
-    end
-
-
-    def files
-
-    end
-
-
-    def import
-
-
-    end
-
+  def files
 
   end
 
-
-
-
+  def import
+    Song.new_by_filename(some_filename)
+  end
 
 end
