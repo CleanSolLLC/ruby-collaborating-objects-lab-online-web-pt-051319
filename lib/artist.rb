@@ -29,7 +29,6 @@ class Artist
       #@name = name
       self.all.collect do |artist_name|
         artist_name.name == name ? name : name = Artist.new(name)
-        binding.pry
       end
       #name
     end
